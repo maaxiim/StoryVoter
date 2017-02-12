@@ -113,13 +113,17 @@ function SetupSockets() {
 
     ws.onerror = function (ev) {
         var serverDiv = $('#serverConnectionStatus');
-        serverDiv.text('Server connection status: You were disconnected with an error.  Please refresh the page to reconnect.');
+        serverDiv.text('Server connection status: You were disconnected with an error (' + ev.error + ').  Please refresh the page to reconnect.');
+        $( ":button" ).prop("disabled",true);
+        $( ":button" ).css({ 'color': 'darkGray', 'background': 'gray' });
         serverDiv.css('background-color', 'darkRed');
     }
 
     ws.onclose = function () {
         var serverDiv = $('#serverConnectionStatus');
         serverDiv.text('Server connection status: You are disconnected.  Please refresh the page to reconnect.');
+        $( ":button" ).prop("disabled",true);
+        $( ":button" ).css({ 'color': 'darkGray', 'background': 'gray' });
         serverDiv.css('background-color', 'darkRed');
     };
 }

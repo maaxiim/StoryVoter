@@ -31,16 +31,17 @@
   <style>
     body {background-image: url("/background.png"); background-repeat:repeat}
     table{background:white}
+    th{background: lightgrey; color: black}
   </style>
 </head>
 
 <body onload="InitDocument();">
   <div class="container">
     <div class="text-center"> <img src="/votr2.png" class="img-fluid" style="max-width: 100%">
-      <div class="page-header">
+    
         <div id="sessionId">Session</div>
         <div id='serverConnectionStatus' style="background: darkred; color: white">Not Connected</div>
-      </div>
+      
     </div>
     <div class="row">
       <label for="txtTopic" class="col-sm-2 col-form-label">Vote Topic:</label>
@@ -107,7 +108,17 @@
           <div class="text-center">
             <p><span style="color: darkgray">Submit bug or feature requests at <a href="https://github.com/kevinherzig/StoryVoter">GitHub</a></span>
               <p><span class="" style="font-size: 12px; color: darkgray">StoryVoter.com by Kevin Herzig</span>
-          </div>
+          
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+If you like the site, please consider helping to defrey my costs by donating here: <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHLwYJKoZIhvcNAQcEoIIHIDCCBxwCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYAgqsQnVc5MKEhV6F18uT6A+GsoYU9dHA6lePACQBdbdoF/W/mfGEnSh3Rq33zl+hKjQo7JiQPii5cKn4LB5vN3e/hnBw8nZFh+OmdfHK0d24i030ZYVlSE28fh+tk6gztV46NKFPoxHt9f5eS/67a+5d6dmuxD0JoZkd6439nqgDELMAkGBSsOAwIaBQAwgawGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIjELMNo2Z0AqAgYjZNjijYlGpv5YmTLUGtC70RAhTW+GSLYCb4EnQUBpw//yO8aTzd+zvN+IJcXqkMY9ff3JOg4fuuOOpgIgVoRt3vlI61IeNfYYvxRWolI0TFeDASgTFBpDME52sH5ZGr/vCWZnxrsVaIR0cr1Zqg/DBDQUfCpeFQuv0BgZcsotIvdPVGBVm77OQoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTcwMjEyMDIyMjIwWjAjBgkqhkiG9w0BCQQxFgQUMWh9XeKYEvXsiCV5rYs7LqQVcsIwDQYJKoZIhvcNAQEBBQAEgYAH41L4klRWkXN1xOu19PHiBAnojOZb3kg6E/w8xHjfhuzVhRJc3huQSHXZMWOUKL3+Rm8/ya41A20Xgn+7n8yD6LDmyvZNcl2lqH6Z9/6mrZlWmNHgpWGSbMheq96UtvNGNoJNTnGsUXMFSLUkAPt7DlXud6TJwrugs5YkYQO7Bg==-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+
         </footer>
   </div>
   <script src="/js/jquery-3.1.1.min.js"></script>

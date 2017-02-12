@@ -186,8 +186,6 @@ function ProcessClientMessage(m, socket) {
   //  Client message processor
 
   // Process the message and update the game state accordingly
-
-
   switch (message.command) {
 
     // Client is changing their name
